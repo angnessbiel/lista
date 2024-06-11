@@ -1,0 +1,111 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Centralizar conteúdo */
+  .center {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo do título */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo da área de input e botão adicionar */
+  .input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .input button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo da lista de tarefas */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .tarefa-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tarefa-buttons button:nth-child(1) {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .tarefa-buttons button:nth-child(1):hover {
+    background-color: #218838;
+  }
+  
+  .tarefa-buttons button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .tarefa-buttons button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 600px) {
+    .input input {
+      width: 60%;
+    }
+  
+    .input button {
+      padding: 10px;
+    }
+  
+    .tarefa-buttons button {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  
